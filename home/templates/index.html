@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Favourite Books</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body class="p-5">
+    <div class="container-fluid pt-3 pr-5 pl-5">
+            <h1>Book List</h1>    
+            <div class="input-group mt-3">
+                <input type="text" class="form-control" name="search_field" placeholder="Search topics or keywords">
+                <div class="input-group-append">
+                    <button class="btn btn-info" type="submit" onclick="search()">Search</button>
+                </div>
+            </div>
+                
+
+            <div class="table-responsive mt-4">
+                <table id="demo" class="table" style="font-size: 15px;">
+                    <thead>
+                        <tr class="table text-center">
+                            <th scope="col" class="align-middle">No</th>
+                            <th scope="col" class="align-middle">Cover</th>
+                            <th scope="col" class="align-middle">Title</th>
+                            <th scope="col" class="align-middle">Authors</th>
+                            <th scope="col" class="align-middle">Publisher</th>
+                            <th scope="col" class="align-middle">Published Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="{% static 'js/addData.js' %}"></script>
+
+    
+</body>
+</html>
