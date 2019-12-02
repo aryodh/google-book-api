@@ -13,6 +13,6 @@ class Goole_book_api_UnitTest(TestCase):
 
     def test_home_contain_title(self):
         response = Client().get('/')
-        title = "Google Book API"
+        title = "Book List"
         html_response = response.content.decode('utf8')
         self.assertIn(title, html_response)
